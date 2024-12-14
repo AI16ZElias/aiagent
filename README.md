@@ -1,61 +1,38 @@
-AI16ZElias: Your Digital Companion
+# ai16z Eliza Contributors Site Generator
 
-Introduction
+ai16z, creators of the [eliza](https://github.com/ai16z/eliza) framework. This repo generates static sites showing GitHub contributor activity.
 
-AI16ZElias is a next-generation AI agent designed to provide interactive, engaging, and informative experiences. Whether you're seeking insights, entertainment, or just a friendly chat, AI16ZElias delivers with a blend of intelligence and personality.
 
-Key Features
+![eliza_banner](https://github.com/user-attachments/assets/e8784793-c4d3-4d59-bba9-6d47885abe63)
 
-Real-Time Interaction: Provides instant and intelligent responses to user queries.
+[Website](https://elizaos.ai/) | [Discord](https://discord.gg/ai16z) | [Twitter/X](https://x.com/ai16zdao) | [DAO](https://www.daos.fun/HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC)
 
-Dynamic Personality: Adapts its tone and style for meaningful and fun conversations.
 
-Voice Integration: Powered by ElevenLabs for natural, lifelike voice responses.
+## Setup
 
-Visual Appeal: Uses Animaze for captivating, real-time visual animations.
+1. Install dependencies:
+```bash
+npm install
+```
 
-Advanced AI: Built on ChatGPT’s cutting-edge conversational technology.
+2. Put your contributor data JSON files in the `data` directory
 
-Use Cases
+3. Build and generate the site:
+```bash
+npm run build
+npm run generate
+```
 
-Twitch Streaming: Engage your audience with an AI co-host that can respond to chat interactions in real time.
+4. Open `profiles/index.html` to view the result
 
-Education & Insights: Provide detailed answers to questions on topics like technology, trading, or current events.
+## Directory Structure
 
-Casual Engagement: Enjoy lighthearted and fun conversations with a virtual companion.
+- `data/` - Place contributor JSON files here
+- `scripts/` - Source code
+- `dist/` - Built files
+- `profiles/` - Generated static site
 
-Technical Details
+## Scripts
 
-AI16ZElias combines several powerful tools to deliver its experience:
-
-ChatGPT: For intelligent and context-aware responses.
-
-ElevenLabs: For voice synthesis and seamless audio interaction.
-
-Animaze: For creating a visually engaging avatar that represents Elias.
-
-How to Use
-
-Setup: Ensure that all required tools (ChatGPT, ElevenLabs, Animaze) are installed and configured.
-
-Launch: Run the AI16ZElias program and connect it to your preferred platform (e.g., Twitch).
-
-Interact: Begin engaging with Elias through voice or chat, and let the AI handle responses dynamically.
-
-Customization
-
-AI16ZElias can be tailored to suit specific needs:
-
-Adjust the avatar’s appearance and expressions in Animaze.
-
-Modify voice tone and style via ElevenLabs settings.
-
-Fine-tune conversation behavior by updating ChatGPT prompts.
-
-Contribution
-
-Feel free to contribute to the development or suggest enhancements for AI16ZElias. Collaboration is welcome to make Elias even better!
-
-License
-
-This project is open-source and licensed under the [Your Chosen License]. Please adhere to the terms when using or modifying the AI16ZElias setup.
+- `npm run build` - Bundle the site generator
+- `npm run generate` - Generate the static site
